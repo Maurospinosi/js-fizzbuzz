@@ -1,0 +1,19 @@
+// Scrivi un programma che stampi i numeri da 1 a 100,
+// ma per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di 5 stampi Buzz.
+// Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
+
+  var uno_cento = Math.floor(Math.random() * 100) + 1;
+
+  if (uno_cento % 3 == 0 && uno_cento % 5 == 0) {
+    document.getElementById('fizzbuzz').innerHTML = "FizzBuzz";
+  } else {
+    if (uno_cento % 3 == 0){
+      document.getElementById('fizzbuzz').innerHTML = "Fizz";
+    }else {
+      if (uno_cento % 5 == 0){
+        document.getElementById('fizzbuzz').innerHTML = "Buzz";
+      }else {
+        document.getElementById('fizzbuzz').innerHTML = uno_cento;
+      }
+   }
+ }
